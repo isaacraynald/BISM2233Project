@@ -85,15 +85,40 @@
     <form class="modal-content animate" action="/action_page.php">
         <div class="content">
             <label ><b>First Name</b></label>
-            <input type="text" placeholder="Enter First Name" name="fname" required>
+            <input type="text" placeholder="Enter First Name"  required>
 
             <label ><b>Last Name</b></label>
-            <input type="text" placeholder="Enter Last Name" name="fname" required>
+            <input type="text" placeholder="Enter Last Name"  required>
 
             <label ><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="text" placeholder="Enter Username"  required>
 
-            <label><b>Date and time</b></label>
+            <label ><b>Phone Number</b></label>
+            <input type="number" placeholder="Enter Phone Number" required>
+
+            <label ><b>Address</b></label>
+            <input type="text" placeholder="Enter Address" required>
+
+            <label ><b>Post Code</b></label>
+            <input type="number" placeholder="Enter PostCode" required>
+
+            <label ><b>City/suburb/town</b></label>
+            <input type="number" placeholder="Enter city/suburb/town" required>
+
+            <label ><b>State</b></label>
+            <select id="state" name="time" class="form-control">
+                <option value="">State</option>
+                <option value="QLD">QLD</option>
+                <option value="NSW">NSW</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TA</option>
+                <option value="VIC">VIC</option>
+                <option value="WA">WA</option>
+                <option value="ACT">ACT</option>
+                <option value="NT">NT</option>
+            </select>
+
+            <label><b>Date of birth</b></label>
             <input class="form-control" type="date" value="date" name="date" >
             <label ><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
@@ -102,7 +127,7 @@
             <input type="password" placeholder="Enter Password" name="psw_confirm" required>
 
             <button type="submit">Register</button>
-                <button type="button" onclick="document.getElementById('register').style.display='none'" class="btn btn-danger">Cancel</button>
+            <button type="button" onclick="document.getElementById('register').style.display='none'" class="btn btn-danger">Cancel</button>
         </div>
     </form>
 
